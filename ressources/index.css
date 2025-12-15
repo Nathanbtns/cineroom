@@ -1,0 +1,11 @@
+header {
+    position: fixed;
+  width: 100%;
+  padding: 20px 40px;
+  color: white;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}

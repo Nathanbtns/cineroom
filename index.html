@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ressources/style.css">
+    <link rel="icon" href="ressources/logo.png" type="image/png">
+    <script type="text/javascript" src="ressources/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <title>CINEROOM - Accueil</title>
+</head>
+<body>
+    <header>
+        <h1 class="titre" onclick="window.location='index.html'">Cinéroom</h1>
+        <input id="search" class="button" placeholder="Rechercher un film   " type="text" onclick="window.location='search.html'">
+    </header>
+    <main>
+<div class="category">
+    <h1>À LA UNE</h1>
+
+    <div class="carousel-container">
+        <button class="left button clair" onclick="scrollCategory(-1, 'tendance')">‹</button>
+
+        <div id="tendance" class="carousel"></div>
+        <button class="right button clair" onclick="scrollCategory(1, 'tendance')">›</button>
+    </div>
+</div>
+<div class="category">
+    <h1>SÉRIES</h1>
+
+    <div class="carousel-container">
+        <button class="left button clair" onclick="scrollCategory(-1, 'series')">‹</button>
+
+        <div id="series" class="carousel2"></div>
+        <button class="right button clair" onclick="scrollCategory(1, 'series')">›</button>
+    </div>
+</div>
+    </main>
+</body>
+</html>
